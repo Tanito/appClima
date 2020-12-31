@@ -14,9 +14,9 @@ function App() {
   function onClose(id) {
     setCities(oldCities => oldCities.filter(c => c.id != id));
   }
-  function onSearch(ciudad) {
+  async function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`)
+    await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`)
       .then(r => r.json())
       .then((recurso) => {
         if (recurso.main !== undefined) {
