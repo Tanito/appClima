@@ -1,0 +1,30 @@
+.SearchBar {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: auto;
+}
+
+.btnBuscar{
+    background-color: transparent ;
+    color: rgb(29, 156, 4) ;
+    border: 2px solid;
+    border-color:  rgb(29, 156, 4) ;
+    border-radius: 6px;
+    margin-top: auto;
+
+}
+
+.inputBuscar{
+    background-color: white ;
+    color: rgb(62, 80, 80) ;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    .inputBuscar {
+        width: 150px;
+    }
+}
